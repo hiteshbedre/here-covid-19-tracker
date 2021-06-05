@@ -71,6 +71,7 @@ exports.handler = (event, context, callback) => {
         return acc
       }, {})
     })
+    blood_group = "b+"
 
     const recovered = recoveredRaw.map(d => {
       return Object.keys(d).reduce((acc, cur) => {
